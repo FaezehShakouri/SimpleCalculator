@@ -1,2 +1,2 @@
 # SimpleCalculator
-## A simple calculator app in Android
+## A simple calculator application using Java and Android Studio.
