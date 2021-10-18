@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MotionLayoutInvalidSceneFileReference"
+    android:layout_width="96dp"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_switch_background"
+    android:id="@+id/layout_switch"
+    app:layoutDescription="@xml/layout_switch_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/switch_pointer"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_blue_round"
+        app:layout_constraintRight_toRightOf="@id/switch_right_image"
+        app:layout_constraintTop_toTopOf="@id/switch_right_image"/>
+
+    <ImageButton
+        android:id="@+id/switch_left_image"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="#0000"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_brightness_3_24"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/switch_right_image"
+        android:background="#0000"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_brightness_7_24"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
